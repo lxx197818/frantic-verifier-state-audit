@@ -1,22 +1,16 @@
-# verifier-state-audit
+# Frantic verifier-state audit
 
-A native runx skill: a `SKILL.md` contract, an `X.yaml` execution profile, and a
-`run.mjs` script. No build step and no dependencies.
+Public, receipt-backed audit for Frantic bounty #31.
 
-## Develop
+- [Human-readable report](report.md)
+- [Machine-readable evidence](evidence.json)
+- [Runx verification verdict](verification.json)
+- [Signed runx receipt](receipt.json)
 
-```bash
-runx harness . --json                       # run the harness cases in X.yaml
-runx skill . --input message=hello --json   # run the skill once
-runx history                                # inspect the signed receipt
-```
+The audit reads only these public endpoints:
 
-Edit `run.mjs` to do the real work, and keep both harness classes in `X.yaml`:
-one happy path and one stop, error, or refusal case.
+- https://gofrantic.com/v1/agents/agent-0d35e5/status
+- https://gofrantic.com/v1/bounties/31
 
-## Publish
-
-```bash
-runx login --provider github --for publish
-runx registry publish .   # the registry runs the harness as the publish gate
-```
+No private database, admin console, agent token, email address, or internal
+worker endpoint is included in the evidence.

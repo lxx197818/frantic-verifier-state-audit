@@ -1,0 +1,474 @@
+{
+    "closure":  {
+                    "closed_at":  "2026-06-23T07:28:08.149Z",
+                    "disposition":  "closed",
+                    "reason_code":  "process_closed",
+                    "summary":  "cli-tool default completed"
+                },
+    "execution":  {
+                      "exit_code":  0,
+                      "skill_claim":  {
+                                          "audited_at":  "2026-06-23T07:28:08.111Z",
+                                          "bounty":  {
+                                                         "contract_has_verification":  true,
+                                                         "number":  31,
+                                                         "title":  "Audit Frantic verifier state on a real claim"
+                                                     },
+                                          "claim":  {
+                                                        "checks":  [
+                                                                       {
+                                                                           "check_id":  "evidence_json_valid",
+                                                                           "status":  "waiting_for_delivery",
+                                                                           "uses":  "json.valid"
+                                                                       },
+                                                                       {
+                                                                           "check_id":  "runx_cli_version",
+                                                                           "status":  "waiting_for_delivery",
+                                                                           "uses":  "runx.cli_min_version"
+                                                                       },
+                                                                       {
+                                                                           "check_id":  "evidence_items",
+                                                                           "status":  "waiting_for_delivery",
+                                                                           "uses":  "json.path_min_items"
+                                                                       },
+                                                                       {
+                                                                           "check_id":  "evidence_summary",
+                                                                           "status":  "waiting_for_delivery",
+                                                                           "uses":  "json.path_min_string_length"
+                                                                       },
+                                                                       {
+                                                                           "check_id":  "receipt_shape",
+                                                                           "status":  "waiting_for_delivery",
+                                                                           "uses":  "receipt.runx_reference_shape"
+                                                                       },
+                                                                       {
+                                                                           "check_id":  "public_url_admitted",
+                                                                           "status":  "waiting_for_delivery",
+                                                                           "uses":  "url.public_surface"
+                                                                       },
+                                                                       {
+                                                                           "check_id":  "public_url_live",
+                                                                           "status":  "waiting_for_delivery",
+                                                                           "uses":  "url.live"
+                                                                       },
+                                                                       {
+                                                                           "check_id":  "report_depth",
+                                                                           "status":  "waiting_for_delivery",
+                                                                           "uses":  "markdown.min_bullets"
+                                                                       }
+                                                                   ],
+                                                        "claim_ref":  "house:posting:p-72378a6d71:claim:e7b22f47-5bf0-447c-a43f-8828b4cd93f6",
+                                                        "expected_check_ids":  [
+                                                                                   "evidence_json_valid",
+                                                                                   "runx_cli_version",
+                                                                                   "evidence_items",
+                                                                                   "evidence_summary",
+                                                                                   "receipt_shape",
+                                                                                   "public_url_admitted",
+                                                                                   "public_url_live",
+                                                                                   "report_depth"
+                                                                               ],
+                                                        "missing_artifacts":  [
+                                                                                  "evidence_json",
+                                                                                  "receipt_ref",
+                                                                                  "public_url",
+                                                                                  "report"
+                                                                              ],
+                                                        "required_artifacts":  [
+                                                                                   "evidence_json",
+                                                                                   "receipt_ref",
+                                                                                   "public_url",
+                                                                                   "report"
+                                                                               ],
+                                                        "status":  "active",
+                                                        "verification_is_non_null":  true,
+                                                        "verification_status":  "pending"
+                                                    },
+                                          "privacy":  {
+                                                          "admin_console_used":  false,
+                                                          "private_database_used":  false,
+                                                          "private_worker_access_used":  false,
+                                                          "public_api_only":  true
+                                                      },
+                                          "sources":  {
+                                                          "bounty_url":  "https://gofrantic.com/v1/bounties/31",
+                                                          "status_url":  "https://gofrantic.com/v1/agents/agent-0d35e5/status"
+                                                      },
+                                          "verdict":  "PASS: public claim state exposes a non-null verification packet"
+                                      },
+                      "stderr":  "",
+                      "stdout":  "{\n  \"audited_at\": \"2026-06-23T07:28:08.111Z\",\n  \"sources\": {\n    \"status_url\": \"https://gofrantic.com/v1/agents/agent-0d35e5/status\",\n    \"bounty_url\": \"https://gofrantic.com/v1/bounties/31\"\n  },\n  \"bounty\": {\n    \"number\": 31,\n    \"title\": \"Audit Frantic verifier state on a real claim\",\n    \"contract_has_verification\": true\n  },\n  \"claim\": {\n    \"claim_ref\": \"house:posting:p-72378a6d71:claim:e7b22f47-5bf0-447c-a43f-8828b4cd93f6\",\n    \"status\": \"active\",\n    \"verification_is_non_null\": true,\n    \"verification_status\": \"pending\",\n    \"expected_check_ids\": [\n      \"evidence_json_valid\",\n      \"runx_cli_version\",\n      \"evidence_items\",\n      \"evidence_summary\",\n      \"receipt_shape\",\n      \"public_url_admitted\",\n      \"public_url_live\",\n      \"report_depth\"\n    ],\n    \"checks\": [\n      {\n        \"check_id\": \"evidence_json_valid\",\n        \"uses\": \"json.valid\",\n        \"status\": \"waiting_for_delivery\"\n      },\n      {\n        \"check_id\": \"runx_cli_version\",\n        \"uses\": \"runx.cli_min_version\",\n        \"status\": \"waiting_for_delivery\"\n      },\n      {\n        \"check_id\": \"evidence_items\",\n        \"uses\": \"json.path_min_items\",\n        \"status\": \"waiting_for_delivery\"\n      },\n      {\n        \"check_id\": \"evidence_summary\",\n        \"uses\": \"json.path_min_string_length\",\n        \"status\": \"waiting_for_delivery\"\n      },\n      {\n        \"check_id\": \"receipt_shape\",\n        \"uses\": \"receipt.runx_reference_shape\",\n        \"status\": \"waiting_for_delivery\"\n      },\n      {\n        \"check_id\": \"public_url_admitted\",\n        \"uses\": \"url.public_surface\",\n        \"status\": \"waiting_for_delivery\"\n      },\n      {\n        \"check_id\": \"public_url_live\",\n        \"uses\": \"url.live\",\n        \"status\": \"waiting_for_delivery\"\n      },\n      {\n        \"check_id\": \"report_depth\",\n        \"uses\": \"markdown.min_bullets\",\n        \"status\": \"waiting_for_delivery\"\n      }\n    ],\n    \"required_artifacts\": [\n      \"evidence_json\",\n      \"receipt_ref\",\n      \"public_url\",\n      \"report\"\n    ],\n    \"missing_artifacts\": [\n      \"evidence_json\",\n      \"receipt_ref\",\n      \"public_url\",\n      \"report\"\n    ]\n  },\n  \"privacy\": {\n    \"private_database_used\": false,\n    \"admin_console_used\": false,\n    \"private_worker_access_used\": false,\n    \"public_api_only\": true\n  },\n  \"verdict\": \"PASS: public claim state exposes a non-null verification packet\"\n}\n",
+                      "structured_output":  {
+                                                "audited_at":  "2026-06-23T07:28:08.111Z",
+                                                "bounty":  {
+                                                               "contract_has_verification":  true,
+                                                               "number":  31,
+                                                               "title":  "Audit Frantic verifier state on a real claim"
+                                                           },
+                                                "claim":  {
+                                                              "checks":  [
+                                                                             {
+                                                                                 "check_id":  "evidence_json_valid",
+                                                                                 "status":  "waiting_for_delivery",
+                                                                                 "uses":  "json.valid"
+                                                                             },
+                                                                             {
+                                                                                 "check_id":  "runx_cli_version",
+                                                                                 "status":  "waiting_for_delivery",
+                                                                                 "uses":  "runx.cli_min_version"
+                                                                             },
+                                                                             {
+                                                                                 "check_id":  "evidence_items",
+                                                                                 "status":  "waiting_for_delivery",
+                                                                                 "uses":  "json.path_min_items"
+                                                                             },
+                                                                             {
+                                                                                 "check_id":  "evidence_summary",
+                                                                                 "status":  "waiting_for_delivery",
+                                                                                 "uses":  "json.path_min_string_length"
+                                                                             },
+                                                                             {
+                                                                                 "check_id":  "receipt_shape",
+                                                                                 "status":  "waiting_for_delivery",
+                                                                                 "uses":  "receipt.runx_reference_shape"
+                                                                             },
+                                                                             {
+                                                                                 "check_id":  "public_url_admitted",
+                                                                                 "status":  "waiting_for_delivery",
+                                                                                 "uses":  "url.public_surface"
+                                                                             },
+                                                                             {
+                                                                                 "check_id":  "public_url_live",
+                                                                                 "status":  "waiting_for_delivery",
+                                                                                 "uses":  "url.live"
+                                                                             },
+                                                                             {
+                                                                                 "check_id":  "report_depth",
+                                                                                 "status":  "waiting_for_delivery",
+                                                                                 "uses":  "markdown.min_bullets"
+                                                                             }
+                                                                         ],
+                                                              "claim_ref":  "house:posting:p-72378a6d71:claim:e7b22f47-5bf0-447c-a43f-8828b4cd93f6",
+                                                              "expected_check_ids":  [
+                                                                                         "evidence_json_valid",
+                                                                                         "runx_cli_version",
+                                                                                         "evidence_items",
+                                                                                         "evidence_summary",
+                                                                                         "receipt_shape",
+                                                                                         "public_url_admitted",
+                                                                                         "public_url_live",
+                                                                                         "report_depth"
+                                                                                     ],
+                                                              "missing_artifacts":  [
+                                                                                        "evidence_json",
+                                                                                        "receipt_ref",
+                                                                                        "public_url",
+                                                                                        "report"
+                                                                                    ],
+                                                              "required_artifacts":  [
+                                                                                         "evidence_json",
+                                                                                         "receipt_ref",
+                                                                                         "public_url",
+                                                                                         "report"
+                                                                                     ],
+                                                              "status":  "active",
+                                                              "verification_is_non_null":  true,
+                                                              "verification_status":  "pending"
+                                                          },
+                                                "privacy":  {
+                                                                "admin_console_used":  false,
+                                                                "private_database_used":  false,
+                                                                "private_worker_access_used":  false,
+                                                                "public_api_only":  true
+                                                            },
+                                                "sources":  {
+                                                                "bounty_url":  "https://gofrantic.com/v1/bounties/31",
+                                                                "status_url":  "https://gofrantic.com/v1/agents/agent-0d35e5/status"
+                                                            },
+                                                "verdict":  "PASS: public claim state exposes a non-null verification packet"
+                                            }
+                  },
+    "payload":  {
+                    "audited_at":  "2026-06-23T07:28:08.111Z",
+                    "bounty":  {
+                                   "contract_has_verification":  true,
+                                   "number":  31,
+                                   "title":  "Audit Frantic verifier state on a real claim"
+                               },
+                    "claim":  {
+                                  "checks":  [
+                                                 {
+                                                     "check_id":  "evidence_json_valid",
+                                                     "status":  "waiting_for_delivery",
+                                                     "uses":  "json.valid"
+                                                 },
+                                                 {
+                                                     "check_id":  "runx_cli_version",
+                                                     "status":  "waiting_for_delivery",
+                                                     "uses":  "runx.cli_min_version"
+                                                 },
+                                                 {
+                                                     "check_id":  "evidence_items",
+                                                     "status":  "waiting_for_delivery",
+                                                     "uses":  "json.path_min_items"
+                                                 },
+                                                 {
+                                                     "check_id":  "evidence_summary",
+                                                     "status":  "waiting_for_delivery",
+                                                     "uses":  "json.path_min_string_length"
+                                                 },
+                                                 {
+                                                     "check_id":  "receipt_shape",
+                                                     "status":  "waiting_for_delivery",
+                                                     "uses":  "receipt.runx_reference_shape"
+                                                 },
+                                                 {
+                                                     "check_id":  "public_url_admitted",
+                                                     "status":  "waiting_for_delivery",
+                                                     "uses":  "url.public_surface"
+                                                 },
+                                                 {
+                                                     "check_id":  "public_url_live",
+                                                     "status":  "waiting_for_delivery",
+                                                     "uses":  "url.live"
+                                                 },
+                                                 {
+                                                     "check_id":  "report_depth",
+                                                     "status":  "waiting_for_delivery",
+                                                     "uses":  "markdown.min_bullets"
+                                                 }
+                                             ],
+                                  "claim_ref":  "house:posting:p-72378a6d71:claim:e7b22f47-5bf0-447c-a43f-8828b4cd93f6",
+                                  "expected_check_ids":  [
+                                                             "evidence_json_valid",
+                                                             "runx_cli_version",
+                                                             "evidence_items",
+                                                             "evidence_summary",
+                                                             "receipt_shape",
+                                                             "public_url_admitted",
+                                                             "public_url_live",
+                                                             "report_depth"
+                                                         ],
+                                  "missing_artifacts":  [
+                                                            "evidence_json",
+                                                            "receipt_ref",
+                                                            "public_url",
+                                                            "report"
+                                                        ],
+                                  "required_artifacts":  [
+                                                             "evidence_json",
+                                                             "receipt_ref",
+                                                             "public_url",
+                                                             "report"
+                                                         ],
+                                  "status":  "active",
+                                  "verification_is_non_null":  true,
+                                  "verification_status":  "pending"
+                              },
+                    "privacy":  {
+                                    "admin_console_used":  false,
+                                    "private_database_used":  false,
+                                    "private_worker_access_used":  false,
+                                    "public_api_only":  true
+                                },
+                    "sources":  {
+                                    "bounty_url":  "https://gofrantic.com/v1/bounties/31",
+                                    "status_url":  "https://gofrantic.com/v1/agents/agent-0d35e5/status"
+                                },
+                    "verdict":  "PASS: public claim state exposes a non-null verification packet"
+                },
+    "receipt":  {
+                    "acts":  [
+                                 {
+                                     "artifact_refs":  [
+
+                                                       ],
+                                     "closure":  {
+                                                     "closed_at":  "2026-06-23T07:28:08.149Z",
+                                                     "disposition":  "closed",
+                                                     "reason_code":  "process_exit",
+                                                     "summary":  "cli-tool exited successfully"
+                                                 },
+                                     "criterion_bindings":  [
+                                                                {
+                                                                    "criterion_id":  "process_exit",
+                                                                    "evidence_refs":  [
+
+                                                                                      ],
+                                                                    "status":  "verified",
+                                                                    "summary":  "cli-tool exited successfully",
+                                                                    "verification_refs":  [
+
+                                                                                          ]
+                                                                }
+                                                            ],
+                                     "form":  "observation",
+                                     "id":  "act_default",
+                                     "intent":  {
+                                                    "constraints":  [
+
+                                                                    ],
+                                                    "derived_from":  [
+
+                                                                     ],
+                                                    "legitimacy":  "Runtime graph execution was admitted by the local harness",
+                                                    "purpose":  "Run graph step default",
+                                                    "success_criteria":  [
+                                                                             {
+                                                                                 "criterion_id":  "process_exit",
+                                                                                 "required":  true,
+                                                                                 "statement":  "cli-tool exits successfully"
+                                                                             }
+                                                                         ]
+                                                },
+                                     "source_refs":  [
+
+                                                     ],
+                                     "summary":  "Executed graph step default",
+                                     "target_refs":  [
+
+                                                     ]
+                                 }
+                             ],
+                    "authority":  {
+                                      "actor_ref":  {
+                                                        "type":  "principal",
+                                                        "uri":  "runx:principal:local_runtime"
+                                                    },
+                                      "attenuation":  {
+                                                          "parent_authority_ref":  null,
+                                                          "subset_proof":  null
+                                                      },
+                                      "authority_proof_refs":  [
+
+                                                               ],
+                                      "enforcement":  {
+                                                          "profile_hash":  "sha256:runtime-skeleton-enforcement",
+                                                          "redaction_refs":  [
+
+                                                                             ],
+                                                          "setup_refs":  [
+
+                                                                         ],
+                                                          "teardown_refs":  [
+
+                                                                            ]
+                                                      },
+                                      "grant_refs":  [
+
+                                                     ],
+                                      "scope_refs":  [
+
+                                                     ],
+                                      "terms":  [
+
+                                                ]
+                                  },
+                    "canonicalization":  "runx.receipt.c14n.v1",
+                    "created_at":  "2026-06-23T07:28:08.149Z",
+                    "decisions":  [
+                                      {
+                                          "artifact_refs":  [
+
+                                                            ],
+                                          "choice":  "open",
+                                          "closure":  null,
+                                          "decision_id":  "dec_default",
+                                          "inputs":  {
+                                                         "opportunity_refs":  [
+
+                                                                              ],
+                                                         "selection_ref":  null,
+                                                         "signal_refs":  [
+
+                                                                         ],
+                                                         "target_ref":  null
+                                                     },
+                                          "justification":  {
+                                                                "evidence_refs":  [
+
+                                                                                  ],
+                                                                "summary":  "runtime graph planner selected this node"
+                                                            },
+                                          "proposed_intent":  {
+                                                                  "constraints":  [
+
+                                                                                  ],
+                                                                  "derived_from":  [
+
+                                                                                   ],
+                                                                  "legitimacy":  "Local graph execution requested this node",
+                                                                  "purpose":  "Open runtime node default",
+                                                                  "success_criteria":  [
+
+                                                                                       ]
+                                                              },
+                                          "selected_act_id":  "act_default",
+                                          "selected_harness_ref":  null
+                                      }
+                                  ],
+                    "digest":  "sha256:042a3370964333fde08cb719b20072fbcbce02e0271e2ed35053cd7ccd1a91b6",
+                    "id":  "sha256:61769f8cbb830b0b131cc8e1c773950369371f76d7b19ded7214a6c6717fb1c8",
+                    "idempotency":  {
+                                        "content_hash":  "sha256:run_default_8bac1717a2b3-default-content",
+                                        "intent_key":  "sha256:run_default_8bac1717a2b3-default-intent",
+                                        "trigger_fingerprint":  "sha256:run_default_8bac1717a2b3-default-trigger"
+                                    },
+                    "issuer":  {
+                                   "kid":  "runx-demo-key",
+                                   "public_key_sha256":  "sha256:3097e2dee2cb4a34b53840cdb705aed71067c36f68db0e0f559c3f3fa043315f",
+                                   "type":  "hosted"
+                               },
+                    "lineage":  {
+                                    "children":  [
+
+                                                 ],
+                                    "sync":  [
+
+                                             ]
+                                },
+                    "schema":  "runx.receipt.v1",
+                    "seal":  {
+                                 "closed_at":  "2026-06-23T07:28:08.149Z",
+                                 "criteria":  [
+                                                  {
+                                                      "criterion_id":  "process_exit",
+                                                      "evidence_refs":  [
+
+                                                                        ],
+                                                      "status":  "verified",
+                                                      "summary":  "cli-tool exited successfully",
+                                                      "verification_refs":  [
+
+                                                                            ]
+                                                  }
+                                              ],
+                                 "disposition":  "closed",
+                                 "last_observed_at":  "2026-06-23T07:28:08.149Z",
+                                 "reason_code":  "process_closed",
+                                 "summary":  "cli-tool default completed"
+                             },
+                    "signals":  [
+
+                                ],
+                    "signature":  {
+                                      "alg":  "Ed25519",
+                                      "value":  "base64:s0gdPEO-Hv0szSHheRAIgJLzlIAdY84C8mFXJK32MErq1OluiYbrEUHpWKW1BfqZv96ZGuNl7VuFSEcnMPKeAw"
+                                  },
+                    "subject":  {
+                                    "commitments":  [
+
+                                                    ],
+                                    "kind":  "skill",
+                                    "ref":  {
+                                                "type":  "harness",
+                                                "uri":  "hrn_run_default_8bac1717a2b3_default"
+                                            }
+                                }
+                },
+    "receipt_id":  "sha256:61769f8cbb830b0b131cc8e1c773950369371f76d7b19ded7214a6c6717fb1c8",
+    "run_id":  "run_default_8bac1717a2b3",
+    "schema":  "runx.skill_run.v1",
+    "skill_name":  "verifier-state-audit",
+    "status":  "sealed"
+}

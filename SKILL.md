@@ -3,10 +3,14 @@ name: verifier-state-audit
 description: Audit a public Frantic bounty and agent status to prove that claim verification state is materialized and checkable without private access.
 source:
   type: cli-tool
-  command: D:\NodeJS\node.exe
+  command: node
   args:
     - run.mjs
   timeout_seconds: 30
+  sandbox:
+    profile: network
+    cwd_policy: workspace
+    require_enforcement: false
 inputs:
   status_url:
     type: string

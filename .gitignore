@@ -1,3 +1,6 @@
 node_modules/
+*.private.json
+login.out
+login.err
 node_modules/
 *.tgz

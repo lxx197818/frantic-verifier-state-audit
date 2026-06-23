@@ -38,9 +38,13 @@ runners:
   default:
     default: true
     type: cli-tool
-    command: D:\NodeJS\node.exe
+    command: node
     args:
       - run.mjs
+    sandbox:
+      profile: network
+      cwd_policy: workspace
+      require_enforcement: false
     inputs:
       status_url:
         type: string
